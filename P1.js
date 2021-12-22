@@ -10,6 +10,7 @@ const solution = "solution.txt";
 
 const MAX_COMMODITIES_PER_ARC = 165;
 
+//encode the types in object so as to avoid typing error and allow for easy autocompletion
 exports.types = {
   factory: "factory",
   market: "market",
@@ -18,14 +19,11 @@ exports.types = {
 
 const types = this.types;
 
+//same case applies for the types above.
 const resources = {
   gold: "golds",
   diamonds: "diamonds",
   jewelleries: "jewelleries",
-};
-
-const sources = {
-  energy: "energy",
 };
 
 const effeciency = "efficiency";
