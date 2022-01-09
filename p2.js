@@ -66,3 +66,14 @@ const findOverallMax = async () => {
     console.log(error);
   }
 };
+
+findOverallMax().then(async () => {
+  for (const arrangement of max.arrangements) {
+    try {
+      //call the p1 function again  so that the output.txt contains the optimal solution.
+      await P1(arrangement);
+    } catch (error) {
+      console.log(error);
+    }
+  }
+});
